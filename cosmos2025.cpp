@@ -1,5 +1,5 @@
-﻿#include <math.h>
-#include <stdio.h>
+﻿#include <cmath>
+#include <cstdio>
 #include <windows.h>
 #include "library.h"
 
@@ -20,7 +20,7 @@ int main() {
 
     // Відкриття файлу для запису результатів
     fopen_s(&p, "cosm2425.dan", "w");
-    if (p == NULL) {
+    if (p == nullptr) {
         printf("Помилка відкриття файлу!\n");
         return 1;
     }
